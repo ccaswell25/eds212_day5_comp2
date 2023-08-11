@@ -5,4 +5,50 @@ format: html
 editor: visual
 ---
 
-## Booleans
+```{r}
+library(tidyverse)
+```
+
+## Logical Operators
+
+-   == (does this match?)
+
+-   != (do these NOT match?)
+
+-   \>,\<, \>=, \<= (greater than/less than)
+
+-   &, \| (ampersand is and, line is or)
+
+```{r}
+## Does 4 match 5? Answer is false
+4 == 5
+```
+
+```{r}
+## Does 4 not match 5? Answer is true
+4 != 5
+```
+
+```{r}
+## Does 4 match "4"? Answer is true
+4 == "4"
+```
+
+```{r}
+## With stored variable names
+cat <- 10 
+dog <- 7
+cat > dog
+```
+
+```{r}
+## Is dog greater than cat OR is cat less than 20? 
+dog > cat | cat < 20
+
+## IS dog less than cat AND cat == 10
+dog < cat & cat == 10
+```
+
+```{r}
+ggplot(data = mtcars, aes(x = mpg, y = hp)) + geom_point(aes(size = mpg, color = hp))
+```
