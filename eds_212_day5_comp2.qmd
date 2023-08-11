@@ -1,0 +1,8 @@
+---
+title: "EDS 212 Day 5 Comp 2"
+author: "Carly"
+format: html
+editor: visual
+---
+
+## Booleans
